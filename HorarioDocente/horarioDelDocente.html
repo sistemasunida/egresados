@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materias</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <style>
+      .custom-nav {
+        flex-direction:inherit !important ;
+        list-style: none !important;
+        justify-content: inherit !important;
+        overflow: inherit !important;
+      }
+      .avatar {
+        height: 200px;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border-radius: 50%;
+        background-size: 100% auto;
+      }
+    </style>
+  </head>
+  <body id="body-pd">
+    <header class="header" id="header">
+      <div class="header_toggle">
+        <i class="bx bx-menu" id="header-toggle"></i>
+      </div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Bienvenido, Mathias Peralta
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Mi Perfil</a>
+            <a class="dropdown-item" href="#">Configuraciones</a>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+      <nav class="nav">
+        <div class="text-white">
+          <a href="../index.html" class="nav_logo" style="text-decoration: none;">
+            <img src="./logo_unida.png" alt="" width="20px" height="20px">
+            <span class="nav_logo-name">UNIDA</span>
+          </a>
+          <div class="nav_list">
+            <a href="../index.html" class="nav_link active" style="text-decoration: none;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+              </svg>
+              <span class="nav_name text-white">Inicio</span>
+            </a>
+            <a href="#" class="nav_link" style="text-decoration: none;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar2-week-fill text-white" viewBox="0 0 16 16">
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zM8.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM3 10.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+              </svg>
+              <span class="nav_name text-white">
+                Horario de <br>Profesores
+              </span>
+            </a>
+            <a href="#" class="nav_link" style="text-decoration: none;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill text-white" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+              </svg>
+              <span class="nav_name text-white">
+                Avisos
+              </span>
+            </a>
+            <a href="../AvanceC/avance.html" class="nav_link" style="text-decoration: none;">
+              <i class="fas fa-book text-white"></i>
+              <span class="nav_name text-white">
+                Avance Curricular
+              </span>
+            </a>
+            <a href="#" class="nav_link" style="text-decoration: none;">
+              <i class="fas fa-university text-white"></i>
+              <span class="nav_name text-white">
+                Código de Etica
+              </span>
+            </a>
+            <a href="#" class="nav_link" style="text-decoration: none;">
+              <i class="fas fa-chart-line text-white"></i>
+              <span class="nav_name text-white">
+                Encuesta
+              </span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Container Main start-->
+    <div class="mb-5 bg-white" style="margin-top: 5em;">
+        <div class="container">
+            <div class="jumbotron text-white" style="background-color: #3498DB;">
+              <h1>Horario del Docente</h1>
+              <hr class="bg-white"/>
+              <p>Aqui podras consultar los dias que se encuentren tus docentes</p>
+              <p>Obs: Sólo puede consultar docentes de su programa académico</p>
+            </div>
+    
+            <div class="elemento p-4">
+              <form action="" id="horarioButton">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="">Nombre:</label>
+                      <input
+                        type="text"
+                        class="form-control input-status"
+                        placeholder="Ej: Alan"
+                        id="firstName"
+                        name="0" 
+                        required
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="">Apellido</label>
+                      <input
+                        type="text"
+                        class="form-control input-status"
+                        placeholder="Ej: Dioses"
+                        id="lastName"
+                        name="0"
+                        required
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="">Asignatura</label>
+                      <input
+                        type="text"
+                        class="form-control input-status"
+                        placeholder="Ej: Base de Datos I"
+                        id="asignatura"
+                        name="0"
+                        required
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group mt-4">
+                      <button
+                        class="btn btn-primary"
+                        type="submit"
+                        id=""
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                        Buscar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <p><strong>Resultados para:</strong> Alan Dioses</p>
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Docente</th>
+                      <th scope="col">Asignatura</th>
+                      <th scope="col">Bloque</th>
+                      <th scope="col">Lunes</th>
+                      <th scope="col">Martes</th>
+                      <th scope="col">Miercoles</th>
+                      <th scope="col">Jueves</th>
+                      <th scope="col">Viernes</th>
+                      <th scope="col">Sábado</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>GONZALEZ AYALA, ALDO ENRIQUE</td>
+                      <td>BIOQUÍMICA </td>
+                      <td>FI3M </td>
+                      <td>07:40 - 08:30 </td>
+                      <td></td>
+                      <td>07:40 - 08:30 </td>
+                      <td></td>
+                      <td>07:40 - 08:30 </td>
+                      <td></td>
+    
+                    </tr>
+                    <tr>
+                      <td>GONZALEZ DE MARTINEZ, LOURDES MARGARITA</td>
+                      <td>SEMIOLOGIA Y SEMIOTECNIA GENERAL</td>
+                      <td>EN4N </td>
+                      <td> 18:30 - 19:20 </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>18:30 - 19:20 </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>  
+            </div>
+          </div>
+    </div>
+    <!--Container Main end-->
+    <script src="../index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  </body>
+</html>
